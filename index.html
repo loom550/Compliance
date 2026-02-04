@@ -326,7 +326,7 @@
             { id: "MEALS-002", category: "Meals", name: "Lunch", level: "GREEN", rate: "$25.20/person", unit: "per person per day", conditions: "At or below TBS Travel Directive rate", overLimit: "RED", docs: ["Receipt", "Evacuee count"], keywords: ["lunch", "midday meal", "food", "per diem"] },
             { id: "MEALS-003", category: "Meals", name: "Dinner", level: "GREEN", rate: "$61.85/person", unit: "per person per day", conditions: "At or below TBS Travel Directive rate", overLimit: "RED", docs: ["Receipt", "Evacuee count"], keywords: ["dinner", "supper", "evening meal", "food", "per diem"] },
             { id: "MEALS-004", category: "Meals", name: "Snacks and Beverages", level: "GREEN", rate: "$17.30/day max", unit: "per person per day", conditions: "Daily maximum per person", overLimit: "RED", docs: ["Receipt", "Evacuee count"], keywords: ["snacks", "beverages", "drinks", "refreshments", "between meals"] },
-            { id: "MEALS-005", category: "Meals", name: "Catering Services", level: "YELLOW", rate: "Per-person rates apply", unit: "per event", conditions: "Must not exceed per-person daily meal rates. IC approval if total >$2000", overLimit: "RED", docs: ["Catering invoice", "Attendee count", "Per-person calculation"], keywords: ["catering", "caterer", "group meals", "buffet", "food service"] },
+            { id: "MEALS-005", category: "Meals", name: "Catering Services", level: "YELLOW", rate: "Per-person rates apply", unit: "per event", conditions: "Must not exceed per-person daily meal rates. IC approval if total >$1000", overLimit: "RED", docs: ["Catering invoice", "Attendee count", "Per-person calculation"], keywords: ["catering", "caterer", "group meals", "buffet", "food service"] },
             { id: "MEALS-006", category: "Meals", name: "Traditional Foods", level: "YELLOW", rate: "Case-by-case", unit: "per event", conditions: "Eligible at extra expense. IC approval. Document cultural significance", overLimit: "RED", docs: ["Receipt", "Cultural justification", "IC approval"], keywords: ["traditional food", "cultural food", "indigenous food", "country food", "wild game", "fish", "bannock"] },
             { id: "MEALS-007", category: "Meals", name: "Special Dietary Meals", level: "GREEN", rate: "Reasonable extra", unit: "per person per day", conditions: "Reasonable additional cost for medical necessity", overLimit: "YELLOW", docs: ["Receipt", "Dietary need documentation"], keywords: ["diabetic", "diabetes", "celiac", "gluten free", "allergy", "dietary restriction", "medical diet"] },
             { id: "MEALS-008", category: "Meals", name: "Infant Formula/Baby Food", level: "GREEN", rate: "As needed", unit: "as needed", conditions: "Reasonable quantities for infants", overLimit: "YELLOW", docs: ["Receipt", "Number of infants"], keywords: ["formula", "baby food", "infant", "baby", "nursing"] },
@@ -522,7 +522,7 @@
                         </div>
                         ${item.level === 'YELLOW' ? `
                             <div class="threshold-warning">
-                                <strong>⚠️ $2,000 Threshold:</strong> If expenditure exceeds $2,000, this automatically escalates to RED (EOC Logistics approval required via IMS 213).
+                                <strong>⚠️ $1,000 Threshold:</strong> If expenditure exceeds $1,000, this automatically escalates to RED (EOC Logistics approval required via IMS 213).
                             </div>
                         ` : ''}
                     </div>
